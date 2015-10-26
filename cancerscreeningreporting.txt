@@ -1,0 +1,140 @@
+'OLD CANCER SCREENING
+if Session("EPQ31006000")="1" then
+	if Session("EPQ31008010")="88" then
+strPayload2=strPayload2&"\par \tab FOBT \tab\tab\tab\tab Not known /last 3 years "&" \tab "
+	end if
+	if Session("EPQ31008010")<>"88" then
+strPayload2=strPayload2&"\par \tab FOBT \tab\tab\tab\tab "&Session("EPQ31008000")&" exams/last 3 years "&" \tab\tab "
+	end if
+
+	if len(Session("EPQ31007000MM")) > 0 then
+	strPayload2=strPayload2&Session("EPQ31007000MM")&" / "
+	end if
+	if len(Session("EPQ31007000YY")) > 0 then
+	strPayload2=strPayload2&Session("EPQ31007000YY")
+	end if
+end if
+
+if Session("EPQ31002000")="1" then
+	if Session("EPQ31004010")="88" then
+	strPayload2=strPayload2&"\par \tab Skin \tab\tab\tab\tab "&"Not Known /last 5 years "&" \tab "
+	end if
+	if Session("EPQ31004010")<>"88" then
+	strPayload2=strPayload2&"\par \tab Skin \tab\tab\tab\tab "&Session("EPQ31004000")&" exams/last 5 years "&" \tab\tab "
+	end if
+
+	if len(Session("EPQ31003000MM")) > 0 then
+	strPayload2=strPayload2&Session("EPQ31003000MM")&" / "
+	end if
+	if len(Session("EPQ31003000YY")) > 0 then
+	strPayload2=strPayload2&Session("EPQ31003000YY")
+	end if
+end if
+
+if Session("EPQ31022000")="1" then
+	if Session("EPQ31028010")="88" then
+strPayload2=strPayload2&"\par \tab Mammogram \tab\tab\tab Not known /last 6 years "&" \tab "
+	end if
+	if Session("EPQ31028010")<>"88" then
+strPayload2=strPayload2&"\par \tab Mammogram \tab\tab\tab "&Session("EPQ31024000")&" exams/last 6 years "&" \tab\tab "
+	end if
+
+	if len(Session("EPQ31023000MM")) > 0 then
+	strPayload2=strPayload2&Session("EPQ31023000MM")&" / "
+	end if
+	if len(Session("EPQ31023000YY")) > 0 then
+	strPayload2=strPayload2&Session("EPQ31023000YY")
+	end if
+end if
+
+if Session("EPQ31010000")="1" then
+	if Session("EPQ31013010")="88" then
+strPayload2=strPayload2&"\par \tab Colon/sigmoidoscopy \tab\tab Not known exams/last 10 years "&" \tab "
+	end if
+	if Session("EPQ31013010")<>"88" then
+strPayload2=strPayload2&"\par \tab Colon/sigmoidoscopy \tab\tab "&Session("EPQ31013000")&" exams/last 10 years "&" \tab\tab "
+	end if
+
+	if len(Session("EPQ31012000MM")) > 0 then
+	strPayload2=strPayload2&Session("EPQ31012000MM")&" / "
+	end if
+	if len(Session("EPQ31012000YY")) > 0 then
+	strPayload2=strPayload2&Session("EPQ31012000YY")
+	end if
+end if
+
+if Session("EPQ31015000")="1" then
+	if Session("EPQ31017010")="88" then
+strPayload2=strPayload2&"\par \tab PAP  \tab\tab\tab\tab Not known /last 6 years "&" \tab "
+	end if
+	if Session("EPQ31017010")<>"88" then
+strPayload2=strPayload2&"\par \tab PAP  \tab\tab\tab\tab "&Session("EPQ31017000")&" exams/last 6 years "&" \tab\tab "
+	end if
+
+	if len(Session("EPQ31016000MM")) > 0 then
+	strPayload2=strPayload2&Session("EPQ31016000MM")&" / "
+	end if
+	if len(Session("EPQ31016000YY")) > 0 then
+	strPayload2=strPayload2&Session("EPQ31016000YY")
+	end if
+end if
+
+if Session("EPQ31018000")="1" then
+	if Session("EPQ31028010")="88" then
+strPayload2=strPayload2&"\par \tab CBE \tab\tab\tab\tab Not known /last 6 years "&" \tab "
+	end if
+	if Session("EPQ31028010")<>"88" then
+strPayload2=strPayload2&"\par \tab CBE \tab\tab\tab\tab "&Session("EPQ31020000")&" exams/last 6 years "&" \tab\tab "
+	end if
+
+	if len(Session("EPQ31019000MM")) > 0 then
+	strPayload2=strPayload2&Session("EPQ31019000MM")&" / "
+	end if
+	if len(Session("EPQ31019000YY")) > 0 then
+	strPayload2=strPayload2&Session("EPQ31019000YY")
+	end if
+end if
+
+if Session("EPQ31026000")="1" then
+	if Session("EPQ31028010")="88" then
+strPayload2=strPayload2&"\par \tab DRE \tab\tab\tab\tab Not known /last 5 years "&" \tab "
+	end if
+	if Session("EPQ31028010")<>"88" then
+strPayload2=strPayload2&"\par \tab DRE \tab\tab\tab\tab "&Session("EPQ31028000")&" exams/last 5 years "&" \tab\tab "
+	end if
+
+	if len(Session("EPQ31027000MM")) > 0 then
+	strPayload2=strPayload2&Session("EPQ31027000MM")&" / "
+	end if
+	if len(Session("EPQ31027000YY")) > 0 then
+	strPayload2=strPayload2&Session("EPQ31027000YY")
+	end if
+end if
+
+if Session("EPQ31030000")="1" then
+	if Session("EPQ31032010")="88" then
+strPayload2=strPayload2&"\par \tab PSA \tab\tab\tab\tab Not known /last 6 years "&" \tab "
+	end if
+	if Session("EPQ31032010")<>"88" then
+strPayload2=strPayload2&"\par \tab PSA \tab\tab\tab\tab "&Session("EPQ31032000")&" exams/last 6 years "&" \tab\tab "
+	end if
+
+	if len(Session("EPQ31031000MM")) > 0 then
+	strPayload2=strPayload2&Session("EPQ31031000MM")&" / "
+	end if
+	if len(Session("EPQ31031000YY")) > 0 then
+	strPayload2=strPayload2&Session("EPQ31031000YY")
+	end if
+end if
+
+	if Session("EPQ31011000") ="1" then
+	strPayload2=strPayload2&" \par\par \tab Note: last colon screening method was \par \tab Colonoscopy "
+	end if
+	if Session("EPQ31011000") ="2" then
+	strPayload2=strPayload2&" \par\par \tab Note: last colon screening method was \par \tab Sigmoidoscopy "
+	end if
+	if Session("EPQ31011000") ="3" then
+	strPayload2=strPayload2&" \par\par \tab Note: last colon screening method was \par \tab "&Session("EPQ31011000specify")
+	end if
+
+strpayload=strpayload&strpayload2&" \par "

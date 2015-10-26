@@ -1,0 +1,60 @@
+Step 1
+(Repeat Module Status)
+
+Delete
+FROM         TempAssessment
+WHERE     (AssessmentDataId IN
+                          (SELECT     AssessmentDataId
+                            FROM          AssessmentData
+                            WHERE      (PatientId IN
+                                                       (SELECT     PatientId
+                                                         FROM          Patient
+                                                         WHERE      (AccountNumber = '800001') OR
+                                                                                (AccountNumber = '800002') OR
+                                                                                (AccountNumber = '800003') OR
+                                                                                (AccountNumber = '800004') OR
+                                                                                (AccountNumber = '800005') OR
+                                                                                (AccountNumber = '800006') OR
+                                                                                (AccountNumber = '800007') OR
+                                                                                (AccountNumber = '800008') OR
+                                                                                (AccountNumber = '800009') OR
+                                                                                (AccountNumber = '800010') OR
+                                                                                (AccountNumber = '800011') OR
+                                                                                (AccountNumber = '800012') OR
+                                                                                (AccountNumber = '800013') OR
+                                                                                (AccountNumber = '800014') OR
+                                                                                (AccountNumber = '800015') OR
+                                                                                (AccountNumber = '800016') OR
+                                                                                (AccountNumber = '800017') OR
+                                                                                (AccountNumber = '800018') OR
+                                                                                (AccountNumber = '800019') OR
+                                                                                (AccountNumber = '800020') OR
+                                                                                (AccountNumber = '800021') OR
+                                                                                (AccountNumber = '800022') OR
+                                                                                (AccountNumber = '800023') OR
+                                                                                (AccountNumber = '800024') OR
+                                                                                (AccountNumber = '800025') OR
+                                                                                (AccountNumber = '800026') OR
+                                                                                (AccountNumber = '800027') OR
+                                                                                (AccountNumber = '800028') OR
+                                                                                (AccountNumber = '800029') OR
+                                                                                (AccountNumber = '800030') OR
+                                                                                (AccountNumber = '800031') OR
+                                                                                (AccountNumber = '800032') OR
+                                                                                (AccountNumber = '800033') OR
+                                                                                (AccountNumber = '800034') OR
+                                                                                (AccountNumber = '800035') OR
+                                                                                (AccountNumber = '800036') OR
+                                                                                (AccountNumber = '800037') OR
+                                                                                (AccountNumber = '800038') OR
+                                                                                (AccountNumber = '800039') OR
+                                                                                (AccountNumber = '800040') OR
+                                                                                (AccountNumber = '800041') OR
+                                                                                (AccountNumber = '800043') OR
+                                                                                (AccountNumber = '800044') OR
+                                                                                (AccountNumber = '800045') OR
+                                                                                (AccountNumber = '800046') OR
+                                                                                (AccountNumber = '800047') OR
+                                                                                (AccountNumber = '800048') OR
+                                                                                (AccountNumber = '800049') OR
+                                                                                (AccountNumber = '800050')))))

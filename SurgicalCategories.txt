@@ -1,0 +1,42 @@
+		<input type="checkbox" name="TEMPEPQ30714030" value="1" id="TEMPEPQ30714030" class="atLeastOneCheckboxRequired" <%=strTEMPEPQ30714030answer1%>>
+		<label for="TEMPEPQ30714030">Belly, abdomen, colon, or bowel</label><br>
+		<input type="checkbox" name="TEMPEPQ30714070" value="1" id="TEMPEPQ30714070" class="atLeastOneCheckboxRequired" <%=strTEMPEPQ30714070answer1%>>
+		<label for="TEMPEPQ30714070">Brain and pituitary</label><br>
+		<input type="checkbox" name="TEMPEPQ30714050" value="1" id="TEMPEPQ30714050" class="atLeastOneCheckboxRequired" <%=strTEMPEPQ30714050answer1%>>
+		<label for="TEMPEPQ30714050">Breast</label><br>
+
+		<input type="checkbox" name="TEMPEPQ30714010" value="1" id="TEMPEPQ30714010" class="atLeastOneCheckboxRequired" <%=strTEMPEPQ30714010answer1%>>
+		<label for="TEMPEPQ30714010">Female reproductive system</label><br>
+
+		<input type="checkbox" name="TEMPEPQ30714020" value="1" id="TEMPEPQ30714020" class="atLeastOneCheckboxRequired" <%=strTEMPEPQ30714020answer1%>>
+		<label for="TEMPEPQ30714020">Head, neck, eye, ear, nose,<br>&nbsp;&nbsp;&nbsp;&nbsp; mouth or thyroid</label><br>
+		<input type="checkbox" name="TEMPEPQ30714040" value="1" id="TEMPEPQ30714040" class="atLeastOneCheckboxRequired" <%=strTEMPEPQ30714040answer1%>>
+		<label for="TEMPEPQ30714040">Heart, artery, vein or cardiac</label><br>
+		<input type="checkbox" name="TEMPEPQ30714100" value="1" id="TEMPEPQ30714100" class="atLeastOneCheckboxRequired" <%=strTEMPEPQ30714100answer1%>>
+		<label for="TEMPEPQ30714100">Lung or thoracic or esophagus </label><br>
+
+		<input type="checkbox" name="TEMPEPQ30714090" value="1" id="TEMPEPQ30714090" class="atLeastOneCheckboxRequired" <%=strTEMPEPQ30714090answer1%>>
+		<label for="TEMPEPQ30714090">Male reproductive system</label><br>
+
+		<input type="checkbox" name="TEMPEPQ30714101" value="1" id="TEMPEPQ30714101" class="atLeastOneCheckboxRequired" <%=strTEMPEPQ30714101answer1%>>
+		<label for="TEMPEPQ30714101">Orthopedic (bone, joint, ligaments, and muscles)</label><br>
+
+		<input type="checkbox" name="TEMPEPQ30714102" value="1" id="TEMPEPQ30714102" class="atLeastOneCheckboxRequired" <%=strTEMPEPQ30714102answer1%>>
+		<label for="TEMPEPQ30714102">Plastic or cosmetic surgery</label><br>
+
+		<input type="checkbox" name="TEMPEPQ30714103" value="1" id="TEMPEPQ30714103" class="atLeastOneCheckboxRequired" <%=strTEMPEPQ30714103answer1%>>
+		<label for="TEMPEPQ30714103">Ports placement or removal </label><br>
+
+		<input type="checkbox" name="TEMPEPQ30714104" value="1" id="TEMPEPQ30714104" class="atLeastOneCheckboxRequired" <%=strTEMPEPQ30714104answer1%>>
+		<label for="TEMPEPQ30714104">Skin </label><br>
+
+		<input type="checkbox" name="TEMPEPQ30714105" value="1" id="TEMPEPQ30714105" class="atLeastOneCheckboxRequired" <%=strTEMPEPQ30714105answer1%>>
+		<label for="TEMPEPQ30714105">Spine (neck and back)</label><br>
+
+		<input type="checkbox" name="TEMPEPQ30714106" value="1" id="TEMPEPQ30714106" class="atLeastOneCheckboxRequired" <%=strTEMPEPQ30714106answer1%>>
+		<label for="TEMPEPQ30714106">Urinary or kidney </label><br>
+
+		<input type="checkbox" name="EPQ30760300" value="1" id="EPQ30760300" class="atLeastOneCheckboxRequired" <%=strEPQ30760300answer1%>>
+		<label for="EPQ30760300">Other type of surgery, specify:</label>
+		  <input id="TEMPEPQ30714000" type="text" maxlength="75"  size="15" name="TEMPEPQ30714000" class="requiredIfPreviousCheckbox" value='<%=Session("TEMPEPQ30714000")%>' ><br>
+

@@ -1,0 +1,179 @@
+TEMP12EPQ30514040
+TEMP13EPQ30514060
+TEMP14EPQ30514030
+TEMP15EPQ30514030
+1TEMP14EPQ30514030
+2TEMP14EPQ30514030
+3TEMP14EPQ30514030
+4TEMP14EPQ30514030
+5TEMP14EPQ30514030
+7TEMP14EPQ30514030
+8TEMP14EPQ30514030
+9TEMP14EPQ30514030
+10TEMP14EPQ30514030
+11TEMP14EPQ30514030
+TEMP16EPQ30514090
+
+<% if session("EPQ30755000")=1 then %>
+<% if session("DisplayCount") < 6 AND Session("EPQ30755000Page1") <> 1 then %>
+<% session("DisplayCount") = Session("DisplayCount") +1 %>
+<% session("EPQ30755000Page1")=1  %>
+<tr>
+<td>
+Bladder Biopsy
+</td>
+<td style="text-align: center;"> <input  class="howMany required" maxlength="3"  id="EPQ30755040" type="text" size= "3" name= "EPQ30755040" value =<%=Session ("EPQ30755040")%>> </td>
+<td style="text-align: center;"> <input id="EPQ30755020" type="text" class="dateMonth" maxlength="2" size= "3" name= "EPQ30755020" value =<%=Session ("EPQ30755020")%>>/
+<input id="EPQ30755030" class="yearRange required" maxlength="4" type="text" size= "4" name= "EPQ30755030" value =<%=Session ("EPQ30755030")%>>
+</td>
+</tr>
+<% end if %>
+<% end if %>
+<% if session("EPQ30755050")=1 then %>
+<% if session("DisplayCount") < 6 AND Session("EPQ30755050Page1") <> 1 then %>
+<% session("DisplayCount") = Session("DisplayCount") +1 %>
+<% session("EPQ30755050Page1")=1  %>
+<tr>
+<td>
+Bone Marrow Biopsy
+</td>
+<td style="text-align: center;"> <input  class="howMany required" maxlength="3"  id="EPQ30755090" type="text" size= "3" name= "EPQ30755090" value =<%=Session ("EPQ30755090")%>> </td>
+<td style="text-align: center;"> <input id="EPQ30755070" type="text" class="dateMonth" maxlength="2" size= "3" name= "EPQ30755070" value =<%=Session ("EPQ30755070")%>>/
+<input id="EPQ30755080" class="yearRange required" maxlength="4" type="text" size= "4" name= "EPQ30755080" value =<%=Session ("EPQ30755080")%>>
+</td>
+</tr>
+<% end if %>
+<% end if %>
+<% if session("EPQ30755100")=1 then %>
+<% if session("DisplayCount") < 6 AND Session("EPQ30755100Page1") <> 1 then %>
+<% session("DisplayCount") = Session("DisplayCount") +1 %>
+<% session("EPQ30755100Page1")=1  %>
+<tr>
+<td>
+Breast Biopsy
+</td>
+<td style="text-align: center;"> <input class="howMany required" maxlength="3"  id="EPQ30755140" type="text" size= "3" name= "EPQ30755140" value =<%=Session ("EPQ30755140")%>> </td>
+<td style="text-align: center;"> <input id="EPQ30755120" type="text" class="dateMonth" maxlength="2" size= "3" name= "EPQ30755120" value =<%=Session ("EPQ30755120")%>>/
+<input id="EPQ30755130" class="yearRange required" maxlength="4" type="text" size= "4" name= "EPQ30755130" value =<%=Session ("EPQ30755130")%>>
+</td>
+</tr>
+<% end if %>
+<% end if %>
+
+
+<% if session("EPQ30755150")=1 then %>
+<% if session("DisplayCount") < 6 AND Session("EPQ30755150Page1") <> 1 then %>
+<% session("DisplayCount") = Session("DisplayCount") +1 %>
+<% session("EPQ30755150Page1")=1  %>
+<tr>
+<td>
+Liver Biopsy
+</td>
+<td style="text-align: center;"> <input  class="howMany required" maxlength="3"  id="EPQ30755190" type="text" size= "3" name= "EPQ30755190" value =<%=Session ("EPQ30755190")%>> </td>
+<td style="text-align: center;"> <input id="EPQ30755170" type="text" class="dateMonth" maxlength="2" size= "3" name= "EPQ30755170" value =<%=Session ("EPQ30755170")%>>/
+<input id="EPQ30755180" class="yearRange required" maxlength="4" type="text" size= "4" name= "EPQ30755180" value =<%=Session ("EPQ30755180")%>>
+</td>
+</tr>
+<% end if %>
+<% end if %>
+<% if session("EPQ30755200")=1 then %>
+<% if session("DisplayCount") < 6 AND Session("EPQ30755200Page1") <> 1 then %>
+<% session("DisplayCount") = Session("DisplayCount") +1 %>
+<% session("EPQ30755200Page1")=1  %>
+<tr>
+<td>
+Lymph node biopsy or sentinel lymph node biopsy
+</td>
+<td style="text-align: center;"> <input  class="howMany required" maxlength="3"  id="EPQ30755240" type="text" size= "3" name= "EPQ30755240" value =<%=Session ("EPQ30755240")%>> </td>
+<td style="text-align: center;"><input id="EPQ30755220" type="text" class="dateMonth" maxlength="2" size= "3" name= "EPQ30755220" value =<%=Session ("EPQ30755220")%>>/
+<input id="EPQ30755230" class="yearRange required" maxlength="4" type="text" size= "4" name= "EPQ30755230" value =<%=Session ("EPQ30755230")%>>
+</td>
+</tr>
+<% end if %>
+<% end if %>
+
+
+<% if session("EPQ30758600")=1 then %>
+<% if session("DisplayCount") < 6 AND Session("EPQ30758600Page1") <> 1 then %>
+<% session("DisplayCount") = Session("DisplayCount") +1 %>
+<% session("EPQ30758600Page1")=1  %>
+<tr>
+<td>
+Biopsy of testicle or penis
+</td>
+<td style="text-align: center;"> <input  class="howMany required" maxlength="3"  id="EPQ30758640" type="text" size= "3" name= "EPQ30758640" value =<%=Session ("EPQ30758640")%>> </td>
+<td style="text-align: center;"> <input id="EPQ30758620" type="text" class="dateMonth" maxlength="2" size= "3" name= "EPQ30758620" value =<%=Session ("EPQ30758620")%>>/
+<input id="EPQ30758630" class="yearRange required" maxlength="4" type="text" size= "4" name= "EPQ30758630" value =<%=Session ("EPQ30758630")%>>
+</td>
+</tr>
+<% end if %>
+<% end if %>
+
+
+
+<% if session("EPQ30755250")=1 then %>
+<% if session("DisplayCount") < 6 AND Session("EPQ30755250Page1") <> 1 then %>
+<% session("DisplayCount") = Session("DisplayCount") +1 %>
+<% session("EPQ30755250Page1")=1  %>
+<tr>
+<td>
+Prostate Biopsy
+</td>
+<td style="text-align: center;"> <input  class="howMany required" maxlength="3"  id="EPQ30755290" type="text" size= "3" name= "EPQ30755290" value =<%=Session ("EPQ30755290")%>> </td>
+<td style="text-align: center;"> <input id="EPQ30755270" type="text" class="dateMonth" maxlength="2" size= "3" name= "EPQ30755270" value =<%=Session ("EPQ30755270")%>>/
+<input id="EPQ30755280" class="yearRange required" maxlength="4" type="text" size= "4" name= "EPQ30755280" value =<%=Session ("EPQ30755280")%>>
+</td>
+</tr>
+<% end if %>
+<% end if %>
+
+<% if session("EPQ30759850")=1 then %>
+<% if session("DisplayCount") < 6 AND Session("EPQ30759850Page1") <> 1 then %>
+<% session("DisplayCount") = Session("DisplayCount") +1 %>
+<% session("EPQ30759850Page1")=1  %>
+<tr>
+<td>
+Sentinel lymph node biopsy
+</td>
+<td style="text-align: center;"> <input  class="howMany required" maxlength="3"  id="EPQ30759890" type="text" size= "3" name= "EPQ30759890" value =<%=Session ("EPQ30759890")%>> </td>
+<td style="text-align: center;"> <input id="EPQ30759870" type="text" class="dateMonth" maxlength="2" size= "3" name= "EPQ30759870" value =<%=Session ("EPQ30759870")%>>/
+<input id="EPQ30759880" class="yearRange required" maxlength="4" type="text" size= "4" name= "EPQ30759880" value =<%=Session ("EPQ30759880")%>>
+</td>
+</tr>
+<% end if %>
+<% end if %>
+
+
+<% if session("EPQ30755300")=1 then %>
+<% if session("DisplayCount") < 6 AND Session("EPQ30755300Page1") <> 1 then %>
+<% session("DisplayCount") = Session("DisplayCount") +1 %>
+<% session("EPQ30755300Page1")=1  %>
+<tr>
+<td>
+Skin Biopsy
+</td>
+<td style="text-align: center;"> <input  class="howMany required" maxlength="3"  id="EPQ30755340" type="text" size= "3" name= "EPQ30755340" value =<%=Session ("EPQ30755340")%>> </td>
+<td style="text-align: center;"> <input id="EPQ30755320" type="text" class="dateMonth" maxlength="2" size= "3" name= "EPQ30755320" value =<%=Session ("EPQ30755320")%>>/
+<input id="EPQ30755330" class="yearRange required" maxlength="4" type="text" size= "4" name= "EPQ30755330" value =<%=Session ("EPQ30755330")%>>
+</td>
+</tr>
+<% end if %>
+<% end if %>
+<% if session("EPQ30755350")=1 then %>
+<% if session("DisplayCount") < 6 AND Session("EPQ30755350Page1") <> 1 then %>
+<% session("DisplayCount") = Session("DisplayCount") +1 %>
+<% session("EPQ30755350Page1")=1  %>
+<tr>
+<td>
+Other biopsy (specify)
+</td>
+<td style="text-align: center;"> <input  class="howMany required" maxlength="3"  id="EPQ30755390" type="text" size= "3" name= "EPQ30755390" value =<%=Session ("EPQ30755390")%>> </td>
+<td style="text-align: center;"> <input id="EPQ30755370" type="text" class="dateMonth" maxlength="2" size= "3" name= "EPQ30755370" value =<%=Session ("EPQ30755370")%>>/
+<input id="EPQ30755380" class="yearRange required" maxlength="4" type="text" size= "4" name= "EPQ30755380" value =<%=Session ("EPQ30755380")%>>
+</td>
+</tr>
+<% end if %>
+<% end if %>
+
+
+

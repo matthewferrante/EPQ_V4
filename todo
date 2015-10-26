@@ -1,0 +1,25 @@
+----
+In checking the remaining files to be wrapped in fieldsets, the following were noted:
+ - not listed on PPT or listed as to be cut: cancerrisk101.asp cancerrisk15a.asp cancerrisk21b2.asp cancerrisk21b3.asp cancerscreening*.asp (listed as cut)familyhistory2.asp familyhistory22.asp familyhistory3.asp
+familyhistorycancer2.asp (this question was cut) 
+historysurgical*.asp(these questionq were cut)
+ pastmedical2b.asp surgicalhistory3.asp surgicalhistory4.asp surgicalhistory5.asp surgicalhistory8.asp surgicalhistory102.asp surgicalhistory103.asp surgicalhistory104.asp surgicalhistory10b.asp surgicalhistory10x.asp
+ - many files were not wrapped: *master*, *[a-z]0.asp, config files and so forth; 
+   - a complete list is in "NotWrappedFiles.txt"
+----
+
+note currentsymptoms162: didn't reach during testing
+note pastmedical5: couldn't reach this page while testing, but the coding is there
+note pastmedical18: couldn't reach this page in testing
+note currentsymptoms*: observed strange interaction between "Other" text field input and None radio buttons; text input doesn't uncheck radio, radio doesn't clear text input
+note surgicalhistory9: couldn't reach this page. need to check that class atLeastOneRowCheckboxRequired implementation works
+note womensrisk9: there _is_ a womensrisk9 file, to answer the PPT: made it required
+note surgicalhistory9: added year class for year inputs (PPT does not specify numeric restrictions on month or year)
+note surgicalhistory10: assumed how many is numeric, year is numeric year range 1-99
+
+question pastmedical2b: (this page was not listed in the presentation file)
+question pastmedical4: powerpoint says "if No, checkboxes clear." but no "No" radio is present on this page.
+question surgicalhistory 3, 4, 5, 8: not listed on PPT, did not wrap in fieldset or add required class
+question surgicalhistory21: the PPT requirement "must make one selection" doesn't seem to be reasonable given the questions; added a class "surgeryCheckboxes" to each wrapping fieldset
+question familyhistorycancer2: it isn't on the presentation slides; multiple negative radios, eitherNoneOrChecked could be adapted to this case too; will call it "eitherNoneDontKnowOrChecked"
+question qualityoflife3.asp: formatting

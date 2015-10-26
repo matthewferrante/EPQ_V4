@@ -1,0 +1,7 @@
+	if Session("EPQ30755700")<>"1" then
+
+		Session.Contents.Remove("EPQ30755740")
+		Session.Contents.Remove("EPQ30755720")
+		Session.Contents.Remove("EPQ30755730")
+
+	end if

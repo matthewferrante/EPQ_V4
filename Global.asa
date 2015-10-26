@@ -1,0 +1,9 @@
+<script language="vbscript" runat="server">
+
+Sub Session_OnStart
+  ' This should get set to any state other than "blank" as soon as a session is initialized or restored.
+  ' We use the presence of this value to detect session timeouts.
+  Session("sessionState")="blank"
+End Sub
+
+</script>

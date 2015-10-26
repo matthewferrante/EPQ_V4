@@ -1,0 +1,322 @@
+added todo and changelog files
+
+currentsymptoms2.asp: change class to requiredIfBranchActive
+
+demographics1.asp: first two fields required; added requiredIfPreviousCheckbox
+demographics1.asp: automatically select radio button when Other/Specifiy text entered 
+demographics1.asp: add requiredIfPreviousCheckbox to Other/Specify text field
+
+demographics1b.asp: automatically check box when Other/Specified text entered
+demographics1b.asp: add requiredIfPreviousCheckbox to Other/Specify text field
+demographics1b.asp: automatically select radio button when Other/Specifiy text entered 
+
+demographics2.asp: require both fields; (class="qTriggerOffOverseasSchool" repeated twice for graduated college radio)
+
+demographics3.asp: require first question (selection from radio)
+demographics3b.asp: require question (selection from radio) (missing from previous commit for unknown reason)
+demographics3b.asp: omitted spurious "radio" from class attribute
+
+demographics4.asp: require minlength of 4 characters for both fields
+demographics4b.asp: require question (selection from radio)
+demographics4.asp: add "required" class to both questions (minlength apparently does not mark fields invalid if empty)
+
+visitbackground1.asp: require first question (second question needs to be
+handled)
+
+visitbackground2.asp: require first question (selection from radio); add requiredIfBranchActive for second radio
+visitbackground2.asp: automatically check box when Other/Specified text entered
+
+demographics1 and 1b, scripts.js: corrected behavior of automatic checking of radio, add requiredIfPreviousRadio
+demographics1.asp: Other/Specify text box: need rule: If Other, Require "specify" text element.  If box not other, specify should clear.
+demographics1b.asp: keyup is not being triggered on the text input... there's no id on it, but name="" was duplicated!
+demographics1b.asp: "required" for checkboxes (while keeping unique ids)
+demographics1b.asp: Other/Specify text box: need Other/Specify rule.
+
+Fixed following files are missing id's (duplicate name attribute like demographics1):
+(find with grep -l "name[^>]* name" *.asp )
+cancerrisk17b.asp
+cancerrisk19b1.asp
+cancerrisk19b2.asp
+cancerrisk19b3.asp
+cancerrisk21b1.asp
+cancerrisk21b2.asp
+cancerrisk21b3.asp
+cancerrisk26.asp
+pastmedical13b1.asp
+pastmedical13b2.asp
+pastmedical13b3.asp
+pastmedical13b4.asp
+pastmedical13b5.asp
+pastmedical16b.asp
+pastmedical17b.asp
+pastmedical2b.asp
+pastmedical4b.asp
+pastmedical4b1.asp
+pastmedical4b2.asp
+pastmedical4b3.asp
+
+demographics1b.asp: confirmed that user input on Specify text value is being retained when form is navigated Continue, Previous
+(values would not have been saved properly previously due to the missing id attributes)
+
+demographics2.asp: fix radio buttons not being required 
+demographics1, 2, 3: wrap fields in fieldset , take out common form initializing code
+demographics3b, 4, 4b: wrap fields in fieldset
+
+demographics2.asp: hiddenQOverseasSchool years disappears when focused, first radio box is selected
+
+demographics2.asp: Attended school years disappears when form is navigated Continue / Previous
+demographics2.asp: clear years field when other radio button selected
+demographics2.asp: years inappropriately disappears when navigating Continue then Previous
+demographics3.asp: current and previous occupaton fields inappropriately disappear when navigating Continue then Previous
+
+
+
+Monday, Oct 17
+all: wrap in fieldsets
+
+visitbackground1.asp: date components must be numeric
+visitbackground2.asp: require "Other" if radio checked
+
+personalhistorycancer1.asp: "required" on radio
+personalhistorycancer2: require at least one checkbox,
+personalhistorycancer3: age, at least one checkbox require (a few dozen rows)
+personalhistorycancer4: "must require with text" by requiring minimum length 4
+personalhistorycancer5: require first question, require Other/Specify if checked
+pastmedical1, 2.asp: at least one checkbox required (needs to be checked)
+
+pastmedical3.asp: require at least one checkbox, require Other/Specify if checked
+
+pastmedical4.asp: at least one checkbox required; require Other/Specify if checked
+pastmedical4b.asp: require age OR year; at least one checkbox required; require Other/Specify if checked
+
+pastmedical4b1.asp: require all questions; age and years numeric constraint
+pastmedical4b2.asp: require all questions; age and years numeric constraint
+pastmedical4b3.asp: require all questions; age and years numeric constraint
+pastmedical5.asp: at least one checkbox required, require Other/Specify if checked
+pastmedical6.asp: at least one checkbox required, require Other/Specify if checked
+pastmedical7.asp: at least one checkbox required, require Other/Specify if checked
+pastmedical8.asp: at least one checkbox required, require Other/Specify if checked
+pastmedical9.asp: at least one checkbox required, require Other/Specify if checked
+pastmedical10.asp: at least one checkbox required, require Other/Specify if checked
+pastmedical11.asp: at least one checkbox required, require Other/Specify if checked
+pastmedical12.asp: at least one checkbox required, require Other/Specify if checked
+pastmedical13.asp: at least one checkbox required, require Other/Specify if checked
+pastmedical13b1.asp: at least one checkbox required, require Other/Specify if checked
+pastmedical13b2.asp: at least one checkbox required, require Other/Specify if checked
+pastmedical13b3.asp: at least one checkbox required, require Other/Specify if checked
+pastmedical13b4.asp: at least one checkbox required, require Other/Specify if checked
+pastmedical13b5.asp: at least one checkbox required, require Other/Specify if checked
+pastmedical14.asp: at least one checkbox required, require Other/Specify if checked
+pastmedical15.asp: at least one checkbox required, require Other/Specify if checked
+pastmedical16.asp: at least one checkbox required, require Other/Specify if checked
+
+pastmedical16b.asp: require all questions; age and years numeric constraint
+pastmedical17.asp: at least one checkbox required, require Other/Specify if checked
+pastmedical17b.asp: require all questions; age and years numeric constraint
+
+
+scripts.js: requiredIfPreviousCheckbox code to drive the behavior of Other/Specify
+currentsymptoms2.asp: remove redundant script
+currentsymptoms31.asp: at least one checkbox required
+
+currentsymptoms4.asp: require Other/Specify if checked
+currentsymptoms5.asp: require Other/Specify if checked
+currentsymptoms6.asp: require radios, require Other/Specify if checked
+currentsymptoms7.asp: require radios
+currentsymptoms8.asp: require radios, require Other/Specify if checked
+currentsymptoms9.asp: require Other/Specify if checked
+currentsymptoms10.asp: require Other/Specify if checked
+currentsymptoms11.asp: require Other/Specify if checked
+currentsymptoms11.asp: require Other/Specify if checked
+currentsymptoms12.asp: require Other/Specify if checked
+currentsymptoms13.asp: require Other/Specify if checked
+currentsymptoms14.asp: require Other/Specify if checked
+currentsymptoms15.asp: require Other/Specify if checked
+currentsymptoms162.asp: require Other/Specify if checked
+currentsymptoms16.asp: require Other/Specify if checked
+currentsymptoms17.asp: wrap in fieldset
+currentsymptoms18.asp: require radios
+currentsymptoms19.asp: at least one checkbox required, require Other/Specify if checked
+currentsymptoms20.asp: at least one checkbox required, require Other/Specify if checked
+currentsymptoms21.asp: require complete text
+currentsymptoms22.asp: require Other/Specify if checked
+currentsymptoms23.asp: require Other/Specify if checked
+currentsymptoms24.asp: require Other/Specify if checked, require Yes/Specify if checked
+currentsymptoms25.asp: require complete text
+
+
+currentsymptoms3.asp: Must check one box OR None on 2nd. If NONE, then checkboxes should clear, if checkbox, None should clear
+currentsymptoms4.asp: Must answer either None or One or more checkboxes.  If None, no checkboxes can be checked. If checkbox, then None should clear.  If Other, specify is required, if other unselected, specify should clear 
+currentsymptoms5.asp: Must answer either None or One or more checkboxes.  If None, no checkboxes can be checked. If checkbox, then None should clear.  If Other, specify is required, if other unselected, specify should clear 
+currentsymptoms9.asp: Must answer either None or One or more checkboxes.  If None, no checkboxes can be checked. If checkbox, then None should clear.  If Other, specify is required, if other unselected, specify should clear 
+currentsymptoms10.asp: Must answer either None or One or more checkboxes.  If None, no checkboxes can be checked. If checkbox, then None should clear.  If Other, specify is required, if other unselected, specify should clear 
+currentsymptoms11.asp: Must answer either None or One or more checkboxes.  If None, no checkboxes can be checked. If checkbox, then None should clear.  If Other, specify is required, if other unselected, specify should clear 
+currentsymptoms12.asp: Must answer either None or One or more checkboxes.  If None, no checkboxes can be checked. If checkbox, then None should clear.  If Other, specify is required, if other unselected, specify should clear 
+currentsymptoms13.asp: Must answer either None or One or more checkboxes.  If None, no checkboxes can be checked. If checkbox, then None should clear.  If Other, specify is required, if other unselected, specify should clear 
+currentsymptoms14.asp: Must answer either None or One or more checkboxes.  If None, no checkboxes can be checked. If checkbox, then None should clear.  If Other, specify is required, if other unselected, specify should clear 
+currentsymptoms15.asp: Must answer either None or One or more checkboxes.  If None, no checkboxes can be checked. If checkbox, then None should clear.  If Other, specify is required, if other unselected, specify should clear 
+currentsymptoms162.asp: Must answer either None or One or more checkboxes.  If None, no checkboxes can be checked. If checkbox, then None should clear.  If Other, specify is required, if other unselected, specify should clear 
+currentsymptoms16.asp: Must answer either None or One or more checkboxes.  If None, no checkboxes can be checked. If checkbox, then None should clear.  If Other, specify is required, if other unselected, specify should clear 
+currentsymptoms17.asp: Must answer either None or One or more checkboxes.  If None, no checkboxes can be checked. If checkbox, then None should clear.
+currentsymptoms22.asp: For BOTH questions (independent of each other) Must answer either None or One or more checkboxes.  If None, no checkboxes can be checked. If checkbox, then None should clear.  If Other, specify is required, if other unselected, specify should clear
+currentsymptoms23.asp: Must answer either None or One or more checkboxes.  If None, no checkboxes can be checked. If checkbox, then None should clear.  If Other, specify is required, if other unselected, specify should clear 
+currentsymptoms24.asp: Must answer either None or One or more checkboxes.  If None, no checkboxes can be checked. If checkbox, then None should clear.  If Other, specify is required, if other unselected, specify should clear 
+
+test, fixes for untested changes
+
+stream edit to update to fieldset convention on any file with a div class='QuestionBox': cancerrisk12.asp cancerrisk13.asp cancerrisk14.asp cancerrisk16.asp cancerrisk17b.asp cancerrisk20.asp familyhistorycancer3.asp familyhistorycancer8.asp psychosocial3.asp cancerrisk1.asp cancerrisk121.asp cancerrisk15.asp cancerrisk15a.asp cancerrisk17.asp cancerrisk17b1.asp cancerrisk17b2.asp cancerrisk17b3.asp cancerrisk17b4.asp cancerrisk17b5.asp cancerrisk17b6.asp cancerrisk18.asp cancerrisk18b.asp cancerrisk18b2.asp cancerrisk19.asp cancerrisk19b.asp cancerrisk19b1.asp cancerrisk19b2.asp cancerrisk19b3.asp cancerrisk2.asp cancerrisk21.asp cancerrisk21b.asp cancerrisk21b1.asp cancerrisk21b2.asp cancerrisk21b3.asp cancerrisk22.asp cancerrisk23.asp cancerrisk24.asp cancerrisk25.asp cancerrisk3.asp cancerrisk4.asp cancerrisk5.asp cancerrisk6.asp cancerscreening1.asp cancerscreening2.asp cancerscreening3.asp cancerscreening4.asp cancerscreening5.asp cancerscreening6.asp cancerscreening7.asp cancerscreening8.asp cancerscreening9.asp familyhistory1.asp familyhistory3.asp familyhistorycancer1.asp familyhistorycancer2.asp familyhistorycancer4.asp familyhistorycancer5.asp historysurgical.asp historysurgical2.asp historysurgical3.asp historysurgical4.asp historysurgical5.asp kioskpage0.asp pastmedical2b.asp portalpage0.asp portalprod0.asp psychosocial1.asp psychosocial2.asp psychosocial4.asp qualityoflife1.asp qualityoflife2.asp qualityoflife3.asp qualityoflife4.asp surgicalhistory1.asp surgicalhistory11.asp surgicalhistory2.asp surgicalhistory21.asp surgicalhistory21test.asp surgicalhistory21test2.asp surgicalhistory3.asp surgicalhistory4.asp surgicalhistory5.asp surgicalhistory6.asp surgicalhistory7.asp surgicalhistory8.asp test.asp testdemographics1.asp visitbackground1test.asp womensrisk.asp womensrisk1.asp womensrisk10.asp womensrisk11.asp womensrisk12.asp womensrisk14.asp womensrisk15.asp womensrisk15b.asp womensrisk16.asp womensrisk2.asp womensrisk3.asp womensrisk4.asp womensrisk5.asp womensrisk6.asp womensrisk7.asp womensrisk8.asp womensrisk9.asp
+
+All of the forms with Other/Specify checkboxes: attach keyup handler to coordinate checking of box/clearing of text field
+
+Many with Other checkboxes: if Other unchecked, Specify needs to clear. (need to verify for each form)
+	pastmedical4b.asp: if other unchecked, specify clears
+	pastmedical5.asp: if other unchecked, specify clears
+	pastmedical6.asp: if other unchecked, specify clears
+	pastmedical7.asp: if other unchecked, specify clears
+	pastmedical8.asp: if other unchecked, specify clears
+	pastmedical9.asp: if other unchecked, specify clears
+	pastmedical10.asp: if other unchecked, specify clears
+	pastmedical11.asp: if other unchecked, specify clears
+	pastmedical12.asp: if other unchecked, specify clears
+	pastmedical13.asp: if other unchecked, specify clears
+	pastmedical14.asp: if other unchecked, specify clears
+	pastmedical15.asp: if other unchecked, specify clears
+  pastmedical16.asp: if other unchecked, specify clears
+  pastmedical17.asp: if other unchecked, specify clears
+
+pastmedical4b1.asp, pastmedical4b2.asp, pastmedical4b3.asp: add constraints 
+womensrisk.asp, womensrisk1.asp, womensrisk2.asp, womensrisk3.asp, womensrisk4.asp, womensrisk5.asp, womensrisk6.asp, womensrisk7.asp, womensrisk8.asp, womensrisk9.asp, womensrisk10.asp, womensrisk11.asp, womensrisk12.asp, womensrisk13.asp, womensrisk14.asp, womensrisk15.asp, womensrisk15b.asp, womensrisk16.asp: add constraints
+
+surgicalhistory1.asp, surgicalhistory2.asp, surgicalhistory6.asp,
+surgicalhistory7.asp, surgicalhistory9.asp, surgicalhistory11: add constraints
+
+familyhistorycancer1.asp, familyhistorycancer3.asp, familyhistorycancer4.asp, familyhistorycancer5.asp, familyhistorycancer6.asp, familyhistorycancer7.asp, familyhistorycancer8.asp: add constraints
+
+cancerrisk0.asp, cancerrisk1.asp, cancerrisk10.asp, cancerrisk11.asp, cancerrisk12.asp, cancerrisk121.asp, cancerrisk13.asp, cancerrisk14.asp, cancerrisk15.asp, cancerrisk16.asp, cancerrisk17.asp, cancerrisk17b.asp, cancerrisk17b1.asp, cancerrisk17b2.asp, cancerrisk17b3.asp, cancerrisk17b4.asp, cancerrisk17b5.asp cancerrisk17b6.asp, cancerrisk18.asp, cancerrisk18b.asp, cancerrisk18b2.asp, cancerrisk19.asp, cancerrisk19b.asp, cancerrisk19b1.asp, cancerrisk19b2.asp, cancerrisk19b3.asp, cancerrisk2.asp, cancerrisk21.asp, cancerrisk21b.asp, cancerrisk21b1.asp, cancerrisk22.asp, cancerrisk23.asp, cancerrisk24.asp, cancerrisk25.asp, cancerrisk26.asp cancerrisk3.asp, cancerrisk4.asp, cancerrisk5.asp, cancerrisk6.asp, cancerrisk7.asp, cancerrisk71.asp, cancerrisk8.asp, cancerrisk9.asp: added constraints
+
+psychosocial1.asp, psychosocial2.asp, psychosocial3.asp, psychosocial4.asp: added constraints
+
+qualityoflife1.asp, qualityoflife2.asp, qualityoflife3.asp, qualityoflife4.asp, qualityoflife5.asp: add constraints
+
+
+Wednesday... debugging...
+stream edit to update jquery-1.3.2 to jquery-1.6.2, and include validation plugin
+
+Wrapped in fieldsets: surgicalhistory6.asp (fixed required too), cancerrisk26.asp, familyhistorycancer6.asp, familyhistorycancer7.asp, qualityoflife5.asp, surgicalhistory9.asp, surgicalhistory10.asp, surgicalhistory21.asp
+(Not wrapped in fieldsets due to pattern not patching; checked remaining files to verify, put output in NotWrappedFiles.txt). 
+
+added legend to several cancerrisk* files that had none; (verified with grep that all files that contain a fieldset have at least one legend)
+
+womensrisk6.asp: changed class to eitherNoneOrCheckedNested, added requiredIfBranchActive to nested radios
+
+surgicalhistory9.asp: added requiredIfPreviousCheckbox to all Year inputs
+surgicalhistory9: added year class for year inputs (assumed it was desired)
+surgicalhistory10: huge! added "howMany required" and "year required" to inputs 
+
+surgicalhistory21: removed tracheotomy from "head" checkboxes, wrapped all checkbox lists in fieldsets with class "surgicalCheckboxes", added requiredIfPreviousCheckbox
+
+familyhistorycancer1: moved class eitherNegativeResponseOrChecked to fieldset
+familyhistorycancer6, 7: added required to radios, added classes to checkboxes and enclosing tr for constraints
+familyhistory2.asp: make class consistent with familyhistorycancer6 and 7, add require class to radios
+
+cancerrisk1: add required class
+cancerrisk19b3: fix typos in attribute names
+
+
+Sunday, 2011-10-23
+css/styles.css: fixed .column1, .column2, and .column3 to use display: inline-block instead of float and clear. This fixed the "collapsed parent div" issue in:
+	demographics1.asp
+	personalhistorycancer5.asp
+	pastmedical1.asp
+	pastmedical8.asp
+	currentsymptoms9.asp
+	currentsymptoms10.asp
+	... and others
+
+Thursday, 2011-10-27, mitch
+fixed pastmedical1 and several others: eitherNoneOrChecked implementation is buggy - fixed in script.js, checked in several files
+"     currentsymptoms3, 4, 5, several others : eitherNoneOrChecked implementation is buggy
+"     womensrisk6, 7, 13: eitherNoneOrChecked implementation is buggy
+"     familyhistorycancer8: eitherNoneOrChecked implementation is buggy
+"     familyhistory1: eitherNoneOrChecked implementation is buggy
+"     cancerrisk10: eitherNoneOrChecked implementation is buggy; uses class on enclosing spans
+"     cancerrisk12, 13, 14, 16, 17b, 25: eitherNoneOrChecked implementation; uses class on enclosing fieldset
+"     psychosocial3: eitherNoneOrChecked implementation; uses class on enclosing fieldset
+fixed pastmedicalhistory2: using "atLeastOneCheckboxRequired" instead of eitherNoneOrChecked
+fixed familyhistorycancer3: multiple negative radios, called it "eitherNoneDontKnowOrChecked" - fixed interactions on "required" for radios/checkboxes when navigating between pages (not accounting for existing data)
+fixed womensrisk6: html code with multiple radios as descendants might not work with the current implementation of eitherNoneOrChecked (changed to eitherNoneOrCheckedNested) -changed back to eitherNoneOrChecked, fixed implementation; 
+fixed familyhistorycancer1: needs rule: coordinate checkbox exclusive of radios on; using class "eitherNegativeResponseOrChecked" on enclosing div for this case, where any radio checked is a negative response - changed to eitherNoneDontKnowOrChecked class; should work exactly like the others (label doesn't matter, all radioes taken as negative responses)
+fixed cancerrisk3, 4, 5: radio needs to be made mutually exclusive with text input; using class "eitherNegativeResponseOrInput" on enclosing div, using 'daysPerWeek' for input preceding the radio button
+fixed pastmedical3: need rule: if colon unchecked, age and # clear; if other unchecked, specify clears - added one-off script in pastmedical3
+fixed pastmedical3: fixed incorrect id on Colon checkbox
+fixed personalhistorycancer3: If “No Treatment” selected, other 4 checkboxes must clear (and vice versa, i.e., combo of Radiation/Chemo/Surgery/Other OR No Treatment; called this eitherCheckboxOrNoTreatment, on each input, each set nested beneath a <tr> - added eitherCheckboxOrNoTreatment handler; 
+fixed requested to add HTML maxlength attribute to inputs whereever validation calls for maxlength
+   - fixed size 2 requirements:age|years|yearsWithZero|smokingRange|exposureYears|heightInches|hours|minutes|dateMonth|dateDay
+   - fixed size 2 requirements:howMany|exposureHoursPerWeek|cigarettes|weightPounds|alcoholConsumption
+   - fixed size 4 requirements:dateYear
+tested and fixed the existing handlers for fieldset-level rules: eitherNoneOrChecked, eitherNoneDontKnowOrChecked
+
+
+Monday, 2011-10-31, mitch
+fixed familyhistorycancer6, 7: rules needed between checkboxes and radios; called the class "eitherOneOrTwoOrMoreCheckboxes" on the tr enclosing the checkboxes
+fixed familyhistory2: uses rule for "eitherOneOrTwoOrMoreCheckboxes" on the tr enclosing the checkboxes, like familyhistorycancer6, 7
+fixed personalhistorycancer5: implemented atLeastOneCheckboxIfBranchActive
+cleaned up bugs/notes/questions and got rid of extra junk in todo
+
+Saturday, 2011-11-05, Justis
+Sunday, 2011-11-06, Justis
+merged the refactor_hidden branch into master, which includes:
++ simplified a lot of code.
++ removed a bunch of unused code.
++ moved code that was specific to surgicalhistory21.asp into scripts_js/surgicalhistory21.js.
++ most logic for .qTrigger*, .qTriggerOff*, and .hiddenQ* is now in a single block for consistency.
++ should have resolved most .qTrigger bugs.
++ improved coverage for show/hide questions when navigating back to pages already answered.
++ implemented .requiredIfBranchActive for all .qTrigger*, instead of just the few that had been active.
+
+Monday, 2011-11-07, Justis
++ cleaned up the git working directory in DevEPQv3
++ setup private developer directories and domain names for Matthew and Justis
++ fixed formatting for questions box on pastmedical11.asp
+
+Tuesday, 2011-11-08, Justis
++ de-duplicated validation messages so that we don't get a bunch of "This field is required" in the legend
++ fixed .atLeastOneCheckboxIfBranchActive logic on personalhistorycancer5.asp and cancerrisk15.asp
++ fixed .atLeastOneCheckboxRequired on pastmedical8.asp
++ fixed qTrigger rules on womensrisk2.asp
++ none/neither are now mutually exclusive of "don't know" in familyhistorycancer1.asp and familyhistorycancer3.asp
+
+Tuesday, 2011-11-08, mitch
+fixed: pastmedical4.asp 'year' field requires number from 0-99, should be from 1900-2011 (really fancy if up to current year so no updated needed in 2012)
+       also found in pastmedical13b1.asp,pastmedical13b2,pastmedical13b3,pastmedical13b4,pastmedical13b5,pastmedical16b,pastmedical17b
+fixed: test-2011-11-07; Small grey block appears between Green instruction block and datagrid
+       This could be as simple as setting the fieldset style to white background
+       qualityoflife5.asp is an example ( This is the Legend part of the
+			 fieldset, when no content is provided only the background shows. )
+fixed: currentsymptoms11.asp - if you choose a MH item, then the 2nd question appears.  If you select None, the other checkboxes clear but the 2nd question remains answered. It should clear and hide
+fixed again: (table field labels):  updated class on fieldset and style rule to eliminate green rectangle: cancerrisk10.asp, cancerrisk26.asp, cancerrisk7.asp, cancerrisk71.asp, cancerrisk8.asp, cancerrisk9.asp, css/styles.css, familyhistory2.asp, familyhistorycancer6.asp, familyhistorycancer7.asp, personalhistorycancer3.asp, qualityoflife5.asp, surgicalhistory10.asp, surgicalhistory9.asp
+
+Thursday, 2011-11-10, mitch
+Verified the fixes made by Justis:
+## bugs which may be repaired from Justis's recent .qTrigger fixes. These need to be retested:
+bug in general: forms with a qTrigger aren't requiring requiredIfBranchActive, so with 2 levels of questions only one of the sets will be activated 
+note womensrisk6,cancerrisk[345]: note that qTrigger*/requiredIfBranchActive behavior is not working here either
+bug womensrisk6: qTrigger doesn't trigger requiredIfBranchActive
+bug cancerrisk17, 23, 24: qTrigger not working to activate requiredIfBranchActive
+bug visitbackground2.asp: hidden fields are not shown when navigating back to the page and "No" is checked
+note familyhistorycancer*: strange interaction between "None" and "Don't Know" radio inputs due to the different naming/ids of the fields
+visitbackground2: hidden text fields and radios not clearing when branch is deactivated; corrected in scripts.js 
+cancerrisk18: added required class to number input fields per github issue ticket
+womensrisk5: question: not required on PPT; should it be? (Yes) Added required class to radio
+
+confirmed fixed: bug familyhistorycancer5: formatting is off
+fixed visitbackground1.asp: date must be clear if never selected. added eitherNegativeOrDate class rule
+fixed familyhistory2, familyhistorycancer6,7: require a radio selection on each row, and at least one checkbox
+
+Friday, 2011-11-11, mitch
+fixed cancerrisk21: Added qTrigger2Off class to first and second radio elements to trigger the correct hiding and clearing behavior for number of days per month. 
+fixed cancerrisk15, and a few other qTrigger2 cases of hidden fields not being re-hidden or cleared when a checkbox was unchecked
+fixed a few cases of hidden fields not being re-hidden or cleared when Other/Specify checkbox was automatically changed
+
+Monday, 2011-11-14, mitch
+corrected ui behavior for qTrigger on cancerrisk3, 4, and 5, in script.js

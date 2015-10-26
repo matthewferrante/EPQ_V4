@@ -1,0 +1,433 @@
+
+
+	Session("EPQ30755000") = Request.Form("EPQ30755000")
+	Session("EPQ30755150") = Request.Form("EPQ30755150")
+
+	Session("EPQ30755090") = Request.Form("EPQ30755090")
+	Session("TEMP14EPQ30514030") = Request.Form("TEMP14EPQ30514030")
+	Session("EPQ30755100") = Request.Form("EPQ30755100")
+	Session("1TEMP14EPQ30514030") = Request.Form("1TEMP14EPQ30514030")
+	Session("2TEMP14EPQ30514030") = Request.Form("2TEMP14EPQ30514030")
+	Session("3TEMP14EPQ30514030") = Request.Form("3TEMP14EPQ30514030")
+	Session("4TEMP14EPQ30514030") = Request.Form("4TEMP14EPQ30514030")
+	Session("5TEMP14EPQ30514030") = Request.Form("5TEMP14EPQ30514030")
+	Session("7TEMP14EPQ30514030") = Request.Form("7TEMP14EPQ30514030")
+	Session("8TEMP14EPQ30514030") = Request.Form("8TEMP14EPQ30514030")
+	Session("9TEMP14EPQ30514030") = Request.Form("9TEMP14EPQ30514030")
+	Session("10TEMP14EPQ30514030") = Request.Form("10TEMP14EPQ30514030")
+	Session("11TEMP14EPQ30514030") = Request.Form("11TEMP14EPQ30514030")
+	Session("TEMP16EPQ30514090") = Request.Form("TEMP16EPQ30514090")
+
+
+	Session("EPQ30514000Describe") = Request.Form("EPQ30514000Describe")
+	Session("TEMPEPQ30521200") = Request.Form("TEMPEPQ30521200")
+'
+
+CLEAR PAGE
+'BIOPSY
+Session("EPQ30755150Page1")=0
+Session("EPQ30514040Page1")=0
+Session("EPQ30755090Page1")=0
+Session("EPQ30755100Page1")=0
+Session("TEMP14EPQ30514030Page1")=0
+Session("1TEMP14EPQ30514030Page1")=0
+Session("2TEMP14EPQ30514030Page1")=0
+Session("3TEMP14EPQ30514030Page1")=0
+Session("4TEMP14EPQ30514030Page1")=0
+Session("5TEMP14EPQ30514030Page1")=0
+Session("7TEMP14EPQ30514030Page1")=0
+Session("8TEMP14EPQ30514030Page1")=0
+Session("9TEMP14EPQ30514030Page1")=0
+Session("10TEMP14EPQ30514030Page1")=0
+Session("11TEMP14EPQ30514030Page1")=0
+Session("TEMP16EPQ30514090Page1")=0
+
+
+if Session("EPQ30755150") = "1" then
+Session("PageCounter")=Session("PageCounter")+1
+else
+Session("EPQ30755150")= "0"
+end if
+if Session("EPQ30514040") = "1" then
+Session("PageCounter")=Session("PageCounter")+1
+else
+Session("EPQ30514040")= "0"
+end if
+if Session("EPQ30755090") = "1" then
+Session("PageCounter")=Session("PageCounter")+1
+else
+Session("EPQ30755090")= "0"
+end if
+if Session("EPQ30755100") = "1" then
+Session("PageCounter")=Session("PageCounter")+1
+else
+Session("EPQ30755100")= "0"
+end if
+if Session("TEMP14EPQ30514030") = "1" then
+Session("PageCounter")=Session("PageCounter")+1
+else
+Session("TEMP14EPQ30514030")= "0"
+end if
+if Session("1TEMP14EPQ30514030") = "1" then
+Session("PageCounter")=Session("PageCounter")+1
+else
+Session("1TEMP14EPQ30514030")= "0"
+end if
+if Session("2TEMP14EPQ30514030") = "1" then
+Session("PageCounter")=Session("PageCounter")+1
+else
+Session("2TEMP14EPQ30514030")= "0"
+end if
+if Session("3TEMP14EPQ30514030") = "1" then
+Session("PageCounter")=Session("PageCounter")+1
+else
+Session("3TEMP14EPQ30514030")= "0"
+end if
+if Session("4TEMP14EPQ30514030") = "1" then
+Session("PageCounter")=Session("PageCounter")+1
+else
+Session("4TEMP14EPQ30514030")= "0"
+end if
+if Session("5TEMP14EPQ30514030") = "1" then
+Session("PageCounter")=Session("PageCounter")+1
+else
+Session("5TEMP14EPQ30514030")= "0"
+end if
+if Session("7TEMP14EPQ30514030") = "1" then
+Session("PageCounter")=Session("PageCounter")+1
+else
+Session("7TEMP14EPQ30514030")= "0"
+end if
+if Session("8TEMP14EPQ30514030") = "1" then
+Session("PageCounter")=Session("PageCounter")+1
+else
+Session("8TEMP14EPQ30514030")= "0"
+end if
+if Session("9TEMP14EPQ30514030") = "1" then
+Session("PageCounter")=Session("PageCounter")+1
+else
+Session("9TEMP14EPQ30514030")= "0"
+end if
+if Session("10TEMP14EPQ30514030") = "1" then
+Session("PageCounter")=Session("PageCounter")+1
+else
+Session("10TEMP14EPQ30514030")= "0"
+end if
+if Session("11TEMP14EPQ30514030") = "1" then
+Session("PageCounter")=Session("PageCounter")+1
+else
+Session("11TEMP14EPQ30514030")= "0"
+end if
+if Session("TEMP16EPQ30514090") = "1" then
+Session("PageCounter")=Session("PageCounter")+1
+else
+Session("TEMP16EPQ30514090")= "0"
+end if
+
+
+
+'REQUEST VALUES
+if Session("EPQ30514040Page1")= 1 then
+Session("EPQ30514040N")=Request.Form("EPQ30514040N")
+Session("EPQ30514040MM")=Request.Form("EPQ30514040MM")
+Session("EPQ30514040YY")=Request.Form("EPQ30514040YY")
+end if
+
+if Session("EPQ30755090Page1")= 1 then
+Session("EPQ30755090N")=Request.Form("EPQ30755090N")
+Session("EPQ30755090MM")=Request.Form("EPQ30755090MM")
+Session("EPQ30755090YY")=Request.Form("EPQ30755090YY")
+end if
+
+if Session("EPQ30755100Page1")= 1 then
+Session("EPQ30755100N")=Request.Form("EPQ30755100N")
+Session("EPQ30755100MM")=Request.Form("EPQ30755100MM")
+Session("EPQ30755100YY")=Request.Form("EPQ30755100YY")
+end if
+
+if Session("EPQ30755150Page1")= 1 then
+Session("EPQ30755150N")=Request.Form("EPQ30755150N")
+Session("EPQ30755150MM")=Request.Form("EPQ30755150MM")
+Session("EPQ30755150YY")=Request.Form("EPQ30755150YY")
+end if
+
+if Session("TEMP14EPQ30514030Page1")= 1 then
+Session("TEMP14EPQ30514030N")=Request.Form("TEMP14EPQ30514030N")
+Session("TEMP14EPQ30514030MM")=Request.Form("TEMP14EPQ30514030MM")
+Session("TEMP14EPQ30514030YY")=Request.Form("TEMP14EPQ30514030YY")
+end if
+
+if Session("1TEMP14EPQ30514030Page1")= 1 then
+Session("1TEMP14EPQ30514030N")=Request.Form("1TEMP14EPQ30514030N")
+Session("1TEMP14EPQ30514030MM")=Request.Form("1TEMP14EPQ30514030MM")
+Session("1TEMP14EPQ30514030YY")=Request.Form("1TEMP14EPQ30514030YY")
+end if
+
+if Session("2TEMP14EPQ30514030Page1")= 1 then
+Session("2TEMP14EPQ30514030N")=Request.Form("2TEMP14EPQ30514030N")
+Session("2TEMP14EPQ30514030MM")=Request.Form("2TEMP14EPQ30514030MM")
+Session("2TEMP14EPQ30514030YY")=Request.Form("2TEMP14EPQ30514030YY")
+end if
+
+if Session("3TEMP14EPQ30514030Page1")= 1 then
+Session("3TEMP14EPQ30514030N")=Request.Form("3TEMP14EPQ30514030N")
+Session("3TEMP14EPQ30514030MM")=Request.Form("3TEMP14EPQ30514030MM")
+Session("3TEMP14EPQ30514030YY")=Request.Form("3TEMP14EPQ30514030YY")
+end if
+
+if Session("4TEMP14EPQ30514030Page1")= 1 then
+Session("4TEMP14EPQ30514030N")=Request.Form("4TEMP14EPQ30514030N")
+Session("4TEMP14EPQ30514030MM")=Request.Form("4TEMP14EPQ30514030MM")
+Session("4TEMP14EPQ30514030YY")=Request.Form("4TEMP14EPQ30514030YY")
+end if
+
+if Session("5TEMP14EPQ30514030Page1")= 1 then
+Session("5TEMP14EPQ30514030N")=Request.Form("5TEMP14EPQ30514030N")
+Session("5TEMP14EPQ30514030MM")=Request.Form("5TEMP14EPQ30514030MM")
+Session("5TEMP14EPQ30514030YY")=Request.Form("5TEMP14EPQ30514030YY")
+end if
+
+if Session("7TEMP14EPQ30514030Page1")= 1 then
+Session("7TEMP14EPQ30514030N")=Request.Form("7TEMP14EPQ30514030N")
+Session("7TEMP14EPQ30514030MM")=Request.Form("7TEMP14EPQ30514030MM")
+Session("7TEMP14EPQ30514030YY")=Request.Form("7TEMP14EPQ30514030YY")
+end if
+
+if Session("8TEMP14EPQ30514030Page1")= 1 then
+Session("8TEMP14EPQ30514030N")=Request.Form("8TEMP14EPQ30514030N")
+Session("8TEMP14EPQ30514030MM")=Request.Form("8TEMP14EPQ30514030MM")
+Session("8TEMP14EPQ30514030YY")=Request.Form("8TEMP14EPQ30514030YY")
+end if
+
+if Session("9TEMP14EPQ30514030Page1")= 1 then
+Session("9TEMP14EPQ30514030N")=Request.Form("9TEMP14EPQ30514030N")
+Session("9TEMP14EPQ30514030MM")=Request.Form("9TEMP14EPQ30514030MM")
+Session("9TEMP14EPQ30514030YY")=Request.Form("9TEMP14EPQ30514030YY")
+end if
+
+if Session("10TEMP14EPQ30514030Page1")= 1 then
+Session("10TEMP14EPQ30514030N")=Request.Form("10TEMP14EPQ30514030N")
+Session("10TEMP14EPQ30514030MM")=Request.Form("10TEMP14EPQ30514030MM")
+Session("10TEMP14EPQ30514030YY")=Request.Form("10TEMP14EPQ30514030YY")
+end if
+
+if Session("11TEMP14EPQ30514030Page1")= 1 then
+Session("11TEMP14EPQ30514030N")=Request.Form("11TEMP14EPQ30514030N")
+Session("11TEMP14EPQ30514030MM")=Request.Form("11TEMP14EPQ30514030MM")
+Session("11TEMP14EPQ30514030YY")=Request.Form("11TEMP14EPQ30514030YY")
+end if
+
+if Session("TEMP16EPQ30514090Page1")= 1 then
+Session("TEMP16EPQ30514090N")=Request.Form("TEMP16EPQ30514090N")
+Session("TEMP16EPQ30514090MM")=Request.Form("TEMP16EPQ30514090MM")
+Session("TEMP16EPQ30514090YY")=Request.Form("TEMP16EPQ30514090YY")
+end if
+
+
+
+
+
+EPQ30514040">Bladder biopsy</label><br>
+EPQ30755090">Bone marrow biopsy</label><br>
+EPQ30755100">Breast biopsy</label><br>
+TEMP14EPQ30514030">Brain biopsy</label><br>
+1TEMP14EPQ30514030">Cervical biopsy (including LEEP or CONE)
+2TEMPEPQ30514030">Kidney biopsy</label><br>
+
+
+EPQ30755150">Liver biopsy</label><br>
+
+4TEMP14EPQ30514030">Lung biopsy</label><br>
+5TEMP14EPQ30514030">Lymph node biopsy or sentinel lymph node biopsy</label><br>
+7TEMP14EPQ30514030">Prostate biopsy</label><br>
+8TEMP14EPQ30514030">Skin biopsy</label><br>
+9TEMP14EPQ30514030">Testicle or penis 10TEMP14EPQ30514030">Thyroid biopsy</label><br>
+11TEMP14EPQ30514030">Vulva, vagina, or uterus TEMP16EPQ30514090">Other, specify:</label>		
+
+("EPQ30514000Describe")%>' ><br>
+  
+'BIOPSY QUESTIONS
+<% if session("EPQ30514040")=1 then %>
+<% if session("DisplayCount") < 6 AND Session("EPQ30514040Page1") <> 1 then %>
+<% session("DisplayCount") = Session("DisplayCount") +1 %>
+<% session("EPQ30514040Page2")=1  %>
+<tr>
+<td>Bladder biopsy</td>
+<td style="text-align: center;"><input class="howMany required" maxlength="3"  id="EPQ30514040N" type="text" size= "3" name= "EPQ30514040N" value =<%=Session ("EPQ30514040N")%>></td>
+<td style="text-align: center;"><input id="EPQ30514040MM" type="text" class="dateMonth" maxlength="2" size= "3" name= "EPQ30514040MM" value =<%=Session ("EPQ30514040MM")%>>/
+<input id="EPQ30514040YY" class="yearRange required" maxlength="4" type="text" size= "4" name= "EPQ30514040YY" value =<%=Session ("EPQ30514040YY")%>></td>
+</tr>
+<% end if %>
+<% end if %>
+
+<% if session("EPQ30755090")=1 then %>
+<% if session("DisplayCount") < 6 AND Session("EPQ30755090Page1") <> 1 then %>
+<% session("DisplayCount") = Session("DisplayCount") +1 %>
+<% session("EPQ30755090Page2")=1  %>
+<tr>
+<td>Bone marrow biopsy</td>
+<td style="text-align: center;"><input class="howMany required" maxlength="3"  id="EPQ30755090N" type="text" size= "3" name= "EPQ30755090N" value =<%=Session ("EPQ30755090N")%>></td>
+<td style="text-align: center;"><input id="EPQ30755090MM" type="text" class="dateMonth" maxlength="2" size= "3" name= "EPQ30755090MM" value =<%=Session ("EPQ30755090MM")%>>/
+<input id="EPQ30755090YY" class="yearRange required" maxlength="4" type="text" size= "4" name= "EPQ307550900YY" value =<%=Session ("EPQ30755090YY")%>></td>
+</tr>
+<% end if %>
+<% end if %>
+
+<% if session("EPQ30755100")=1 then %>
+<% if session("DisplayCount") < 6 AND Session("EPQ30755100Page1") <> 1 then %>
+<% session("DisplayCount") = Session("DisplayCount") +1 %>
+<% session("EPQ30755100Page2")=1  %>
+<tr>
+<td>Breast biopsy</td>
+<td style="text-align: center;"><input class="howMany required" maxlength="3"  id="EPQ30755100N" type="text" size= "3" name= "EPQ30755100N" value =<%=Session ("EPQ30755100N")%>></td>
+<td style="text-align: center;"><input id="EPQ30755100MM" type="text" class="dateMonth" maxlength="2" size= "3" name= "EPQ30755100MM" value =<%=Session ("EPQ30755100MM")%>>/
+<input id="EPQ30755100YY" class="yearRange required" maxlength="4" type="text" size= "4" name= "EPQ30755100YY" value =<%=Session ("EPQ30755100YY")%>></td>
+</tr>
+<% end if %>
+<% end if %>
+
+<% if session("1TEMP14EPQ30514030")=1 then %>
+<% if session("DisplayCount") < 6 AND Session("1TEMP14EPQ30514030Page1") <> 1 then %>
+<% session("DisplayCount") = Session("DisplayCount") +1 %>
+<% session("1TEMP14EPQ30514030Page2")=1  %>
+<tr>
+<td>Cervical biopsy (including LEEP or CONE)</td>
+<td style="text-align: center;"><input class="howMany required" maxlength="3"  id="1TEMP14EPQ30514030N" type="text" size= "3" name= "1TEMP14EPQ30514030N" value =<%=Session ("1TEMP14EPQ30514030N")%>></td>
+<td style="text-align: center;"><input id="1TEMP14EPQ30514030MM" type="text" class="dateMonth" maxlength="2" size= "3" name= "1TEMP14EPQ30514030MM" value =<%=Session ("1TEMP14EPQ30514030MM")%>>/
+<input id="1TEMP14EPQ30514030YY" class="yearRange required" maxlength="4" type="text" size= "4" name= "1TEMP14EPQ30514030YY" value =<%=Session ("1TEMP14EPQ30514030YY")%>></td>
+</tr>
+<% end if %>
+<% end if %>
+
+
+<% if session("2TEMP14EPQ30514030")=1 then %>
+<% if session("DisplayCount") < 6 AND Session("2TEMP14EPQ30514030Page1") <> 1 then %>
+<% session("DisplayCount") = Session("DisplayCount") +1 %>
+<% session("2TEMP14EPQ30514030Page2")=1  %>
+<tr>
+<td>Kidney biopsy</td>
+<td style="text-align: center;"><input class="howMany required" maxlength="3"  id="2TEMP14EPQ30514030N" type="text" size= "3" name= "2TEMP14EPQ30514030N" value =<%=Session ("2TEMP14EPQ30514030N")%>></td>
+<td style="text-align: center;"><input id="2TEMP14EPQ30514030MM" type="text" class="dateMonth" maxlength="2" size= "3" name= "2TEMP14EPQ30514030MM" value =<%=Session ("2TEMP14EPQ30514030MM")%>>/
+<input id="2TEMP14EPQ30514030YY" class="yearRange required" maxlength="4" type="text" size= "4" name= "2TEMP14EPQ30514030YY" value =<%=Session ("2TEMP14EPQ30514030YY")%>></td>
+</tr>
+<% end if %>
+<% end if %>
+
+<% if session("EPQ30755150")=1 then %>
+<% if session("DisplayCount") < 6 AND Session("EPQ30755150Page1") <> 1 then %>
+<% session("DisplayCount") = Session("DisplayCount") +1 %>
+<% session("EPQ30755150Page1")=2  %>
+<tr>
+<td>Liver biopsy</td>
+<td style="text-align: center;"><input class="howMany required" maxlength="3"  id="EPQ30755150N" type="text" size= "3" name= "EPQ30755150N" value =<%=Session ("EPQ30755150N")%>></td>
+<td style="text-align: center;"><input id="EPQ30755150MM" type="text" class="dateMonth" maxlength="2" size= "3" name= "EPQ30755150MM" value =<%=Session ("EPQ30755150MM")%>>/
+<input id="EPQ30755150YY" class="yearRange required" maxlength="4" type="text" size= "4" name= "EPQ30755150YY" value =<%=Session ("EPQ30755150YY")%>></td>
+</tr>
+<% end if %>
+<% end if %>
+
+
+<% if session("4TEMP14EPQ30514030")=1 then %>
+<% if session("DisplayCount") < 6 AND Session("4TEMP14EPQ30514030Page1") <> 1 then %>
+<% session("DisplayCount") = Session("DisplayCount") +1 %>
+<% session("4TEMP14EPQ30514030Page1")=2  %>
+<tr>
+<td>Lung biopsy</td>
+<td style="text-align: center;"><input class="howMany required" maxlength="3"  id="4TEMP14EPQ30514030N" type="text" size= "3" name= "4TEMP14EPQ30514030N" value =<%=Session ("4TEMP14EPQ30514030N")%>></td>
+<td style="text-align: center;"><input id="4TEMP14EPQ30514030MM" type="text" class="dateMonth" maxlength="2" size= "3" name= "4TEMP14EPQ30514030MM" value =<%=Session ("4TEMP14EPQ30514030MM")%>>/
+<input id="4TEMP14EPQ30514030YY" class="yearRange required" maxlength="4" type="text" size= "4" name= "4TEMP14EPQ30514030YY" value =<%=Session ("4TEMP14EPQ30514030YY")%>></td>
+</tr>
+<% end if %>
+<% end if %>
+
+
+<% if session("5TEMP14EPQ30514030")=1 then %>
+<% if session("DisplayCount") < 6 AND Session("5TEMP14EPQ30514030Page1") <> 1 then %>
+<% session("DisplayCount") = Session("DisplayCount") +1 %>
+<% session("5TEMP14EPQ30514030Page1")=2  %>
+<tr>
+<td>Lymph node biopsy or sentinel lymph node biopsy</td>
+<td style="text-align: center;"><input class="howMany required" maxlength="3"  id="5TEMP14EPQ30514030N" type="text" size= "3" name= "5TEMP14EPQ30514030N" value =<%=Session ("5TEMP14EPQ30514030N")%>></td>
+<td style="text-align: center;"><input id="5TEMP14EPQ30514030MM" type="text" class="dateMonth" maxlength="2" size= "3" name= "5TEMP14EPQ30514030MM" value =<%=Session ("5TEMP14EPQ30514030MM")%>>/
+<input id="5TEMP14EPQ30514030YY" class="yearRange required" maxlength="4" type="text" size= "4" name= "5TEMP14EPQ30514030YY" value =<%=Session ("5TEMP14EPQ30514030YY")%>></td>
+</tr>
+<% end if %>
+<% end if %>
+
+<% if session("7TEMP14EPQ30514030")=1 then %>
+<% if session("DisplayCount") < 6 AND Session("7TEMP14EPQ30514030Page1") <> 1 then %>
+<% session("DisplayCount") = Session("DisplayCount") +1 %>
+<% session("7TEMP14EPQ30514030Page1")=2  %>
+<tr>
+<td>Prostate biopsy</td>
+<td style="text-align: center;"><input class="howMany required" maxlength="3"  id="7TEMP14EPQ30514030N" type="text" size= "3" name= "7TEMP14EPQ30514030N" value =<%=Session ("7TEMP14EPQ30514030N")%>></td>
+<td style="text-align: center;"><input id="7TEMP14EPQ30514030MM" type="text" class="dateMonth" maxlength="2" size= "3" name= "7TEMP14EPQ30514030MM" value =<%=Session ("7TEMP14EPQ30514030MM")%>>/
+<input id="7TEMP14EPQ30514030YY" class="yearRange required" maxlength="4" type="text" size= "4" name= "7TEMP14EPQ30514030YY" value =<%=Session ("7TEMP14EPQ30514030YY")%>></td>
+</tr>
+<% end if %>
+<% end if %>
+
+<% if session("8TEMP14EPQ30514030")=1 then %>
+<% if session("DisplayCount") < 6 AND Session("8TEMP14EPQ30514030Page1") <> 1 then %>
+<% session("DisplayCount") = Session("DisplayCount") +1 %>
+<% session("8TEMP14EPQ30514030Page1")=2  %>
+<tr>
+<td>Skin biopsy</td>
+<td style="text-align: center;"><input class="howMany required" maxlength="3"  id="8TEMP14EPQ30514030N" type="text" size= "3" name= "8TEMP14EPQ30514030N" value =<%=Session ("8TEMP14EPQ30514030N")%>></td>
+<td style="text-align: center;"><input id="8TEMP14EPQ30514030MM" type="text" class="dateMonth" maxlength="2" size= "3" name= "8TEMP14EPQ30514030MM" value =<%=Session ("8TEMP14EPQ30514030MM")%>>/
+<input id="8TEMP14EPQ30514030YY" class="yearRange required" maxlength="4" type="text" size= "4" name= "8TEMP14EPQ30514030YY" value =<%=Session ("8TEMP14EPQ30514030YY")%>></td>
+</tr>
+<% end if %>
+<% end if %>
+
+<% if session("9TEMP14EPQ30514030")=1 then %>
+<% if session("DisplayCount") < 6 AND Session("9TEMP14EPQ30514030Page1") <> 1 then %>
+<% session("DisplayCount") = Session("DisplayCount") +1 %>
+<% session("9TEMP14EPQ30514030Page1")=2  %>
+<tr>
+<td>Testicle or penis biopsy</td>
+<td style="text-align: center;"><input class="howMany required" maxlength="3"  id="9TEMP14EPQ30514030N" type="text" size= "3" name= "9TEMP14EPQ30514030N" value =<%=Session ("9TEMP14EPQ30514030N")%>></td>
+<td style="text-align: center;"><input id="9TEMP14EPQ30514030MM" type="text" class="dateMonth" maxlength="2" size= "3" name= "9TEMP14EPQ30514030MM" value =<%=Session ("9TEMP14EPQ30514030MM")%>>/
+<input id="9TEMP14EPQ30514030YY" class="yearRange required" maxlength="4" type="text" size= "4" name= "9TEMP14EPQ30514030YY" value =<%=Session ("9TEMP14EPQ30514030YY")%>></td>
+</tr>
+<% end if %>
+<% end if %>
+
+<% if session("10TEMP14EPQ30514030")=1 then %>
+<% if session("DisplayCount") < 6 AND Session("10TEMP14EPQ30514030Page1") <> 1 then %>
+<% session("DisplayCount") = Session("DisplayCount") +1 %>
+<% session("10TEMP14EPQ30514030Page1")=2  %>
+<tr>
+<td>Thyroid biopsy</td>
+<td style="text-align: center;"><input class="howMany required" maxlength="3"  id="10TEMP14EPQ30514030N" type="text" size= "3" name= "10TEMP14EPQ30514030N" value =<%=Session ("10TEMP14EPQ30514030N")%>></td>
+<td style="text-align: center;"><input id="10TEMP14EPQ30514030MM" type="text" class="dateMonth" maxlength="2" size= "3" name= "10TEMP14EPQ30514030MM" value =<%=Session ("10TEMP14EPQ30514030MM")%>>/
+<input id="10TEMP14EPQ30514030YY" class="yearRange required" maxlength="4" type="text" size= "4" name= "10TEMP14EPQ30514030YY" value =<%=Session ("10TEMP14EPQ30514030YY")%>></td>
+</tr>
+<% end if %>
+<% end if %>
+
+<% if session("11TEMP14EPQ30514030")=1 then %>
+<% if session("DisplayCount") < 6 AND Session("11TEMP14EPQ30514030Page1") <> 1 then %>
+<% session("DisplayCount") = Session("DisplayCount") +1 %>
+<% session("11TEMP14EPQ30514030Page1")=2 %>
+<tr>
+<td>Vulva, vagina, or uterus  biopsy</td>
+<td style="text-align: center;"><input class="howMany required" maxlength="3"  id="11TEMP14EPQ30514030N" type="text" size= "3" name= "11TEMP14EPQ30514030N" value =<%=Session ("11TEMP14EPQ30514030N")%>></td>
+<td style="text-align: center;"><input id="11TEMP14EPQ30514030MM" type="text" class="dateMonth" maxlength="2" size= "3" name= "11TEMP14EPQ30514030MM" value =<%=Session ("11TEMP14EPQ30514030MM")%>>/
+<input id="11TEMP14EPQ30514030YY" class="yearRange required" maxlength="4" type="text" size= "4" name= "11TEMP14EPQ30514030YY" value =<%=Session ("11TEMP14EPQ30514030YY")%>></td>
+</tr>
+<% end if %>
+<% end if %>
+
+<% if session("TEMP16EPQ30514090")=1 then %>
+<% if session("DisplayCount") < 6 AND Session("TEMP16EPQ30514090Page1") <> 1 then %>
+<% session("DisplayCount") = Session("DisplayCount") +1 %>
+<% session("TEMP16EPQ30514090Page1")=2  %>
+<tr>
+<td>Other, specify: <%=Session("TEMP16EPQ30514090")%></td>
+<td style="text-align: center;"><input class="howMany required" maxlength="3"  id="TEMP16EPQ30514090N" type="text" size= "3" name= "TEMP16EPQ30514090N" value =<%=Session ("TEMP16EPQ30514090N")%>></td>
+<td style="text-align: center;"><input id="TEMP16EPQ30514090MM" type="text" class="dateMonth" maxlength="2" size= "3" name= "TEMP16EPQ30514090MM" value =<%=Session ("TEMP16EPQ30514090MM")%>>/
+<input id="TEMP16EPQ30514090YY" class="yearRange required" maxlength="4" type="text" size= "4" name= "TEMP16EPQ30514090YY" value =<%=Session ("TEMP16EPQ30514090YY")%>></td>
+</tr>
+<% end if %>
+<% end if %>

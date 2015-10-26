@@ -1,0 +1,2 @@
+<% Session.Abandon %>
+Session deleted.
